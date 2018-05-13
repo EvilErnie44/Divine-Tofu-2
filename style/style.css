@@ -1,29 +1,53 @@
-#parentCont {
-  display: flex;
-  flex-direction:row;
-  align-content:center;
-  width: 100%;
-  height: 900px;
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
+* {
+     box-sizing: border-box;
+    line-height: 1.6; 
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 102, 0.3);
+    color: rgba(255, 153, 0, 0.75);
+}
+
+.apparel {
+    width: 80%;
+    height: 80%; 
+    transition: transform .5s ease-in-out; 
+}
+
+.apparel:hover {
+    
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);     
 }
 
 .sideSpacer {
   position:fixed;
   top:0;
   left:0;
-  bottom:0;
   height:100vh;
-  width:200px;
+  width:220px;
   background-color: #ff9900;
   z-index: 2;
-  transition: width 2s ease-out;
+  transition: width 1s ease-out;
 }
 
 .sideSpacer:hover {
   width:250px;
+}
+
+.shirtnames {
+    font-size: 32px !important; 
+    padding-bottom: 0.5em; 
+}
+
+.sectionTitle {
+    font-size: 60px !important; 
+}
+
+#contentFlex {
+    height: 100vh; 
 }
 
 .flexLeft{
@@ -36,26 +60,94 @@
 
 .flexContainer {
   display:flex;
+  position: relative; 
   margin-left: 25%; 
-  width:1050px;
-  height:425px;
+  margin-bottom: 2%; 
+  max-width:60%;
+  min-height:45%;
   justify-content:space-around;
   align-items:center;
-  background-color: rgba(255, 153, 0, 0.75);
+  background-color: rgba(255, 153, 0, 0.5);
+  box-shadow:0px 20px 250px 10px #fffdd0 inset;
+  border: 3px solid #ff9900; 
+  border-radius: 1%; 
 }
 
 .titleFlex{
   display:flex;
-  margin-left:5%;
-  padding-top:1%;
-  width:1050px;
-  margin: 0 auto;
+  margin-left:25%;
+  padding:20px 0px 20px 0px; 
+  width:60%;
   justify-content:space-evenly;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px; 
 }
 
 .items {
-  background-color: blue;
-  width: auto;
+  width: 50%;
+  height:100%; 
+  color:black;  
+  box-shadow -9px 0 12px rgba(51,51,51,0.8);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: 'Shadows Into Light Two', cursive;
+  padding: 2%; 
+}
+
+.infoflexContainer {
+    
+     display:flex;
+  position: relative; 
+  margin-left: 25%; 
+  margin-bottom: 2%; 
+  max-width:60%;
+  height: auto; 
+  color:black; 
+  justify-content:space-around;
+  align-items:center;
+  background-color: rgba(255, 153, 0, 0.5);
+  box-shadow:0px 20px 250px 10px #fffdd0 inset;
+  border: 3px solid #ff9900; 
+  border-radius: 1%;  
+}
+
+.infoflexContainer p {
+  padding: 1em; 
+  font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.logotext {
+  max-width: 70%; 
+}
+
+.itemBtn {
+   width: 25%; 
+   background-color: white; 
+   color:black; 
+   font-family: 'Work Sans', sans-serif;
+   padding: 1em; 
+   border-radius: 10px 10px 10px 10px;
+   -moz-border-radius: 10px 10px 10px 10px;
+   -webkit-border-radius: 10px 10px 10px 10px;
+   transition: box-shadow 0.3s, color 0.2s ease-in-out; 
+}
+
+.itemBtn:hover{
+ -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+ box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);  
+}
+
+.itemBtn > a {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px; 
+}
+
+.itemBtn > a:hover {
+    color:black; 
 }
 
 #logoCont{
@@ -66,7 +158,7 @@
 #logoCont{
   font-weight: bold;
   width: 100%;
-  opacity: 0.6;
+  opacity: 0.8;
   color:white;
   transition: width 2s, opacity 0.5s ease-in;
 }
@@ -84,17 +176,17 @@
 }
 
 #logoText {
-    text-align: center; 
+  text-align: center; 
 }
 
 #navWrapper {
-    margin-top: 100px; 
+    margin-top: 35px; 
 }
 
 #navWrapper ul li:hover {
   opacity: 1;
   filter: alpha(opacity=0.5);
-  background-color: #FF4A01; 
+  background-color: rgba(255, 74, 1, 0.54); 
 }
 
 #navWrapper ul {
@@ -108,14 +200,22 @@
     padding: 1%; 
     color:white;
     opacity: 0.6;
-    transition: width 2s, background-color 2s, opacity 0.5s ease-in;
-    border-radius: 35%; 
+    transition: background-color 0.25s, opacity 0.25s ease-in;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
     width:98%; 
     font-size: 22px;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+ 
+.itemdetails {
+    padding: 1%; 
+    font-size: 24px; 
 }
 
 .icon {
-    max-width: 90%; 
+    max-width: 80%; 
     margin: 0 auto; 
 }
 
@@ -138,7 +238,7 @@
     opacity: 0.6; 
     width:66px;
     margin-bottom: 10px;
-    transition: width 2s, opacity 0.5s ease-in;
+    transition: width 2s, opacity 0.25s ease-in;
 }
 
 #smItems li:hover {

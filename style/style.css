@@ -64,13 +64,29 @@ body {
   margin-left: 25%; 
   margin-bottom: 2%; 
   max-width:60%;
-  min-height:45%;
+  height:auto;
   justify-content:space-around;
   align-items:center;
   background-color: rgba(255, 153, 0, 0.5);
   box-shadow:0px 20px 250px 10px #fffdd0 inset;
   border: 3px solid #ff9900; 
   border-radius: 1%; 
+}
+
+.sliderflexContainer {
+  display:flex;
+  position: relative; 
+  margin-left: 25%; 
+  margin-bottom: 2%; 
+  max-width:60%;
+  height:auto;
+  justify-content:space-around;
+  align-items:center;
+  background-color: rgba(255, 153, 0, 0.5);
+  box-shadow:0px 20px 250px 10px #fffdd0 inset;
+  border: 3px solid #ff9900; 
+  border-radius: 1%; 
+  padding:2em; 
 }
 
 .titleFlex{
@@ -116,6 +132,12 @@ body {
   padding: 1em; 
   font-size: 20px;
     font-family: 'PT Sans', sans-serif;
+}
+
+.intextimage{
+    padding: 1em;
+    max-width:150px;
+    max-height:150px; 
 }
 
 .logotext {
@@ -291,3 +313,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
+.jssorl-009-spin img{animation-name:jssorl-009-spin;animation-duration:1.6s;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes jssorl-009-spin{from{transform:rotate(0);}to{transform:rotate(360deg);}}.jssorb031{position:absolute}.jssorb031 .i{position:absolute;cursor:pointer}.jssorb031 .i .b{fill:#000;fill-opacity:.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:.3}.jssorb031 .i:hover .b{fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5}.jssorb031 .iav .b{fill:#fff;stroke:#000;fill-opacity:1}.jssorb031 .i.idn{opacity:.3}

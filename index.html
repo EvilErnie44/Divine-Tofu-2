@@ -2,13 +2,17 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title></title>
+      <title>Divine Tofu - Vegan Apparel</title>
       <link rel="stylesheet" type="text/css" href="style/style.css">
+       <link rel="stylesheet" type="text/css" href="style/lightbox.css">
       <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <script src="js/jssor.slider-27.1.0.min.js"></script>
+       <script src="js/lightbox.min.js"></script>
+       <script src="js/jQuery.js"></script>
    </head>
    <body>     
        <!-- Nav Menu -->
@@ -20,12 +24,12 @@
             </div>
             <div id="navWrapper">
                <ul>
-                  <li>Apparel</li>
-                  <li>Gallery</li>
-                  <li>Commision Work</li>
-                  <li>About Me</li>
-                  <li>Contact</li>
-                  <li>Etsy Store</li>   
+                   <a href="#apparel"><li>Apparel</li></a>
+                   <a href="#gal"><li>Gallery</li></a>
+                   <a href="#commision"><li>Commision Work</li></a>
+                   <a href="#about"><li>About Me</li></a>
+                   <a href="#contact"><li>Contact</li></a>
+                   <a href="#store"><li>Etsy Store</li></a> 
                </ul>
             </div>
             <div id="smWrap">
@@ -39,7 +43,6 @@
       </nav>
        
        <div id = "parallax">
-       
        </div>
        
       <div id="contentFlex">
@@ -51,7 +54,7 @@
           <!--This is the tshirt section-->
          <div class="titleFlex">
             <div class="items">
-               <h1 class="sectionTitle">Apparel</h1>
+               <h1 class="sectionTitle" id="apparel">Apparel</h1>
             </div>
          </div>
           
@@ -67,14 +70,14 @@
                <h1 class="shirtnames">We are someone</h1>
                <img class="apparel" src="img/someoneshirt2.png">
                <p class = "itemdetails">£22.00</p>
-               <button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/259799850/t-shirt-we-are-someone-by-divine-tofu?ref=shop_home_active_9">Go to shop</a></button>
+               <button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/259799850/t-shirt-we-are-someone-by-divine-tofu?ref=shop_home_active_9">Visit Store</a></button>
             </div>
              
             <div class="items">
                <h1 class="shirtnames">Veggies Inside</h1>
                <img class="apparel" src="img/vegsshirt.png">
                 <p class = "itemdetails">£22.00</p>
-               <button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/232502428/t-shirt-veggies-inside-by-divine-tofu?ref=shop_home_active_10">Go to shop</a></button>
+               <button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/232502428/t-shirt-veggies-inside-by-divine-tofu?ref=shop_home_active_10">Visit Store</a></button>
             </div>
          </div>
           
@@ -84,21 +87,21 @@
                <h1 class="shirtnames">A boy is</h1>
                <img class="apparel" src="img/aboyis.png">
                 <p class = "itemdetails">£19.00</p>
-               <button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/232501320/t-shirt-we-are-all-the-same-by-divine?ref=shop_home_active_11">Go to shop</a></button>
+               <button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/232501320/t-shirt-we-are-all-the-same-by-divine?ref=shop_home_active_11">Visit Store</a></button>
             </div>
              
             <div class="items">
                <h1 class="shirtnames"> We are someone tote</h1>
                <img class="apparel" src="img/toteBag.png">
                <p class = "itemdetails"><strong>£20.00</strong></p>
-               <button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/259628555/we-are-someone-animal-rights-vegan?ref=listing-shop-header-2">Go to shop</a></button>
+               <button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/259628555/we-are-someone-animal-rights-vegan?ref=listing-shop-header-2">Visit Store</a></button>
             </div>
              
          </div>
         
           <div class="titleFlex">
             <div class="items">
-               <h1 class="sectionTitle">Gallery</h1>
+               <h1 class="sectionTitle" id = "gal">Gallery</h1>
             </div>
          </div>
           
@@ -168,7 +171,7 @@
           
     <div class="titleFlex">
             <div class="items">
-               <h1 class="sectionTitle">Commision Requests</h1>
+               <h1 class="sectionTitle" id = "commision">Commision Art</h1>
             </div>
          </div>
           
@@ -180,11 +183,29 @@
             <img class = "intextimage" src = "img/logo.png">
         </div>
           
-          <div class="flexContainer">
-             
+          <div class=" lbflexContainer">
+             <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+                      <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+                      <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+                      <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+                      <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
          </div>
           
+                    <div class=" lbflexContainer">
+             <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+                      <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+                      <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+                      <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+                      <a href = "img/logo.png" data-lightbox = "com" class = "lbthumbs"><img src = "img/logothumb.png"></a>
+         </div>
           
+          <br>
+          
+           <div class="infoflexContainer">
+                      <img class = "intextimage" src = "img/logo.png">
+<button class="itemBtn"><a href = "https://www.etsy.com/uk/listing/232502428/t-shirt-veggies-inside-by-divine-tofu?ref=shop_home_active_10">Request a commision</a></button>
+            <img class = "intextimage" src = "img/logo.png">
+        </div>
           
           
       </div> 

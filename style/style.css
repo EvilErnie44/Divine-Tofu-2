@@ -30,7 +30,7 @@ body {
   width:220px;
   background-color: #ff9900;
   z-index: 2;
-  transition: width 1s ease-out;
+  transition: width .5s ease-out;
 }
 
 .sideSpacer:hover {
@@ -67,10 +67,33 @@ body {
   height:auto;
   justify-content:space-around;
   align-items:center;
-  background-color: rgba(255, 153, 0, 0.5);
+  background-color: rgba(255, 153, 0, 0.75);
   box-shadow:0px 20px 250px 10px #fffdd0 inset;
   border: 3px solid #ff9900; 
   border-radius: 1%; 
+}
+
+.lbflexContainer {
+  display:flex;
+  position: relative; 
+  margin-left: 25%; 
+  max-width:60%;
+  height:auto;
+  justify-content:space-around;
+  align-items:center;
+  background-color: rgba(255, 153, 0, 0.8);
+  box-shadow:0px 20px 250px 10px #fffdd0 inset;
+}
+
+.lbthumbs img {
+ max-width: 100%; 
+ transition: transform .5s ease-in-out;     
+}
+
+.lbthumbs img:hover {
+        -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);  
 }
 
 .sliderflexContainer {
@@ -82,7 +105,7 @@ body {
   height:auto;
   justify-content:space-around;
   align-items:center;
-  background-color: rgba(255, 153, 0, 0.5);
+  background-color: rgba(255, 153, 0, 0.8);
   box-shadow:0px 20px 250px 10px #fffdd0 inset;
   border: 3px solid #ff9900; 
   border-radius: 1%; 
@@ -122,7 +145,7 @@ body {
   color:black; 
   justify-content:space-around;
   align-items:center;
-  background-color: rgba(255, 153, 0, 0.5);
+  background-color: rgba(255, 153, 0, 0.8);
   box-shadow:0px 20px 250px 10px #fffdd0 inset;
   border: 3px solid #ff9900; 
   border-radius: 1%;  
@@ -201,6 +224,10 @@ body {
   text-align: center; 
 }
 
+.lbthumbs {
+    padding:0.2em; 
+}
+
 #navWrapper {
     margin-top: 35px; 
 }
@@ -229,6 +256,24 @@ body {
     width:98%; 
     font-size: 22px;
     font-family: 'Shadows Into Light Two', cursive;
+}
+
+#navWrapper ul a {
+ text-decoration: none; 
+}
+
+#parallax {
+    background-image: url(../img/parallaxbg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    opacity:0.1;
+    height: 100%;
+    width: 100%;
+    z-index: 0; 
+    margin: 0 auto;
 }
  
 .itemdetails {
